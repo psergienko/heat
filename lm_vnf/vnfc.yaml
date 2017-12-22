@@ -112,12 +112,12 @@ resources:
       cloud_config:
         merge_how: 'dict(recurse_array,no_replace)+list(append)'
         runcmd:
-          - ["/usr/libexec/upload_cik.sh"]
+          - ["upload_cik.sh"]
           - ["ln","-s","/etc/service/zeroconf","/var/service"]
-          - ["/usr/libexec/fixroutes.sh","21","aux_1"]
-          - ["/usr/libexec/get_osm_keys.sh"]
+          - ["fixroutes.sh","21","aux_1"]
+          - ["get_osm_keys.sh"]
         write_files:
-          - path: "/usr/libexec/get_osm_keys.sh"
+          - path: "/usr/libexec/cloud/get_osm_keys.sh"
             permissions: "0775"
             content: |
               #!/bin/bash
@@ -134,7 +134,7 @@ resources:
               if [ -e /pl2/pl2/ssh-authorized-keys/root ]; then
                 chmod 0600 /pl2/pl2/ssh-authorized-keys/root
               fi
-          - path: /usr/libexec/fixroutes.sh
+          - path: /usr/libexec/cloud/fixroutes.sh
             permissions: "0755"
             owner: root
             content: |
@@ -167,7 +167,7 @@ resources:
             owner: root
             content: |
               eth1
-          - path: "/usr/libexec/upload_cik.sh"
+          - path: "/usr/libexec/cloud/upload_cik.sh"
             permissions: "0775"
             content: |
               #!/bin/bash
