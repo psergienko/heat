@@ -27,4 +27,3 @@
 "packetlogic::pre::channel_port":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/pre_vnf/channel_port.yaml
 "packetlogic::pre::vnf_indexed":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/pre_vnf/vnfd_indexed.yaml
 "packetlogic::standard_networks::ns":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/standard_networks_ns/nsd.yaml
-"packetlogic::standard_networks::ns":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/standard_networks_ns/nsd.yaml
