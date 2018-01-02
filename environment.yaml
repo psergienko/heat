@@ -1,3 +1,8 @@
+parameter_defaults:
+   management_provider_network: VIO-FLOATING
+   cik: xxx
+
+resource_registry:
 "packetlogic::channel_networks::channel":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/channel_networks_ns/channel.yaml
 "packetlogic::channel_networks::ns":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/channel_networks_ns/nsd.yaml
 "packetlogic::pre::vnf":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/pre_vnf/vnfd.yaml
@@ -27,3 +32,4 @@
 "packetlogic::pre::channel_port":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/pre_vnf/channel_port.yaml
 "packetlogic::pre::vnf_indexed":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/pre_vnf/vnfd_indexed.yaml
 "packetlogic::standard_networks::ns":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/standard_networks_ns/nsd.yaml
+
