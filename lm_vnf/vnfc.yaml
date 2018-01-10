@@ -51,6 +51,7 @@ resources:
        - port: { get_resource: management_port }
        - port: { get_resource: service_port }
       user_data_format: RAW
+      config_drive: True
       user_data: { get_resource: user_data }
 
   user_data:

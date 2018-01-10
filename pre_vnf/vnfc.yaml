@@ -1,4 +1,4 @@
-githeat_template_version: 2016-04-08
+heat_template_version: 2016-04-08
 
 
 description: >
@@ -35,6 +35,7 @@ resources:
       flavor: { get_param: flavor }
       user_data: { get_resource: cloud_config }
       user_data_format: RAW
+      config_drive: True
       networks:
         repeat:
           template:
