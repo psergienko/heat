@@ -3,33 +3,57 @@ parameter_defaults:
    cik: xxx
 
 resource_registry:
-"packetlogic::channel_networks::channel":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/channel_networks_ns/channel.yaml
-"packetlogic::channel_networks::ns":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/channel_networks_ns/nsd.yaml
-"packetlogic::pre::vnf":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/pre_vnf/vnfd.yaml
-"packetlogic::pre::vnfc":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/pre_vnf/vnfc.yaml
-"packetlogic::pre::channel_ports":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/pre_vnf/channel_ports.yaml
-"packetlogic::pre::channel_port":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/pre_vnf/channel_port.yaml
-"packetlogic::pre::vnf_indexed":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/pre_vnf/vnfd_indexed.yaml
-"packetlogic::pre::vnf_contrail":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/pre_vnf/vnfd_contrail.yaml
-"packetlogic::pre_scaling::ns":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/pre_vnf/pre_scaling_ns.yamlpacketlogic::lm::vnf
-"packetlogic::lm::vnfc":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/lm_vnf/vnfc.yaml
-"packetlogic::pre_group::ns":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/pre_group_ns/nsd.yaml
-"packetlogic::pre_group::balancer":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/pre_group_ns/balancer.yaml
-"packetlogic::pre::vnf":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/pre_vnf/vnfd.yaml
-"packetlogic::pre::vnfc":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/pre_vnf/vnfc.yaml
-"packetlogic::pre::channel_ports":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/pre_vnf/channel_ports.yaml
-"packetlogic::pre::channel_port":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/pre_vnf/channel_port.yaml
-"packetlogic::pre::vnf_indexed":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/pre_vnf/vnfd_indexed.yaml
-"packetlogic::channel_networks::channel":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/channel_networks_ns/channel.yaml
-"packetlogic::channel_networks::ns":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/channel_networks_ns/nsd.yaml
-"packetlogic::lm::vnf":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/lm_vnf/vnfd.yaml
-"packetlogic::lm::vnfc":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/lm_vnf/vnfc.yaml
-"packetlogic::pre_group::ns":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/pre_group_ns/nsd.yaml
-"packetlogic::pre_group::balancer":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/pre_group_ns/balancer.yaml
-"packetlogic::pre::vnf":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/pre_vnf/vnfd.yaml
-"packetlogic::pre::vnfc":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/pre_vnf/vnfc.yaml
-"packetlogic::pre::channel_ports":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/pre_vnf/channel_ports.yaml
-"packetlogic::pre::channel_port":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/pre_vnf/channel_port.yaml
-"packetlogic::pre::vnf_indexed":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/pre_vnf/vnfd_indexed.yaml
-"packetlogic::standard_networks::ns":    https://raw.githubusercontent.com/psergienko/heat/pl-vio/standard_networks_ns/nsd.yaml
-
+   "packetlogic::channel_networks::channel":    http://172.21.6.152/sandvine/channel_networks_ns/channel.yaml
+   "packetlogic::channel_networks::ns":    http://172.21.6.152/sandvine/channel_networks_ns/nsd.yaml
+   "packetlogic::contrail_networks::channel":    http://172.21.6.152/sandvine/contrail_networks_ns/contrail_channel.yaml
+   "packetlogic::contrail_networks::ns":    http://172.21.6.152/sandvine/contrail_networks_ns/nsd.yaml
+   "packetlogic::lm::vnf":    http://172.21.6.152/sandvine/lm_vnf/vnfd.yaml
+   "packetlogic::lm::vnfc":    http://172.21.6.152/sandvine/lm_vnf/vnfc.yaml
+   "packetlogic::pic::vnf":    http://172.21.6.152/sandvine/pic_vnf/vnfd.yaml
+   "packetlogic::pic::vnfc":    http://172.21.6.152/sandvine/pic_vnf/vnfc.yaml
+   "packetlogic::pre_group::ns":    http://172.21.6.152/sandvine/pre_group_ns/nsd.yaml
+   "packetlogic::pre_group::balancer":    http://172.21.6.152/sandvine/pre_group_ns/balancer.yaml
+   "packetlogic::pre::vnf":    http://172.21.6.152/sandvine/pre_vnf/vnfd.yaml
+   "packetlogic::pre::vnfc":    http://172.21.6.152/sandvine/pre_vnf/vnfc.yaml
+   "packetlogic::pre::channel_ports":    http://172.21.6.152/sandvine/pre_vnf/channel_ports.yaml
+   "packetlogic::pre::channel_port":    http://172.21.6.152/sandvine/pre_vnf/channel_port.yaml
+   "packetlogic::pre::vnf_indexed":    http://172.21.6.152/sandvine/pre_vnf/vnfd_indexed.yaml
+   "packetlogic::pre::vnf_contrail":    http://172.21.6.152/sandvine/pre_vnf/vnfd_contrail.yamlpacketlogic::psm::vnf
+   "packetlogic::psm::vnfc":    http://172.21.6.152/sandvine/psm_vnf/vnfc.yaml
+   "packetlogic::channel_networks::channel":    http://172.21.6.152/sandvine/channel_networks_ns/channel.yaml
+   "packetlogic::channel_networks::ns":    http://172.21.6.152/sandvine/channel_networks_ns/nsd.yaml
+   "packetlogic::contrail_networks::channel":    http://172.21.6.152/sandvine/contrail_networks_ns/contrail_channel.yaml
+   "packetlogic::contrail_networks::ns":    http://172.21.6.152/sandvine/contrail_networks_ns/nsd.yaml
+   "packetlogic::lm::vnf":    http://172.21.6.152/sandvine/lm_vnf/vnfd.yaml
+   "packetlogic::lm::vnfc":    http://172.21.6.152/sandvine/lm_vnf/vnfc.yaml
+   "packetlogic::pic::vnf":    http://172.21.6.152/sandvine/pic_vnf/vnfd.yaml
+   "packetlogic::pic::vnfc":    http://172.21.6.152/sandvine/pic_vnf/vnfc.yaml
+   "packetlogic::pre_group::ns":    http://172.21.6.152/sandvine/pre_group_ns/nsd.yaml
+   "packetlogic::pre_group::balancer":    http://172.21.6.152/sandvine/pre_group_ns/balancer.yaml
+   "packetlogic::pre::vnf":    http://172.21.6.152/sandvine/pre_vnf/vnfd.yaml
+   "packetlogic::pre::vnfc":    http://172.21.6.152/sandvine/pre_vnf/vnfc.yaml
+   "packetlogic::pre::channel_ports":    http://172.21.6.152/sandvine/pre_vnf/channel_ports.yaml
+   "packetlogic::pre::channel_port":    http://172.21.6.152/sandvine/pre_vnf/channel_port.yaml
+   "packetlogic::pre::vnf_indexed":    http://172.21.6.152/sandvine/pre_vnf/vnfd_indexed.yaml
+   "packetlogic::pre::vnf_contrail":    http://172.21.6.152/sandvine/pre_vnf/vnfd_contrail.yamlpacketlogic::psm::vnf
+   "packetlogic::psm::vnfc":    http://172.21.6.152/sandvine/psm_vnf/vnfc.yaml
+   "packetlogic::standard_networks::ns":    http://172.21.6.152/sandvine/standard_networks_ns/nsd.yaml
+   "packetlogic::channel_networks::channel":    http://172.21.6.152/sandvine/channel_networks_ns/channel.yaml
+   "packetlogic::channel_networks::ns":    http://172.21.6.152/sandvine/channel_networks_ns/nsd.yaml
+   "packetlogic::contrail_networks::channel":    http://172.21.6.152/sandvine/contrail_networks_ns/contrail_channel.yaml
+   "packetlogic::contrail_networks::ns":    http://172.21.6.152/sandvine/contrail_networks_ns/nsd.yaml
+   "packetlogic::lm::vnf":    http://172.21.6.152/sandvine/lm_vnf/vnfd.yaml
+   "packetlogic::lm::vnfc":    http://172.21.6.152/sandvine/lm_vnf/vnfc.yaml
+   "packetlogic::pic::vnf":    http://172.21.6.152/sandvine/pic_vnf/vnfd.yaml
+   "packetlogic::pic::vnfc":    http://172.21.6.152/sandvine/pic_vnf/vnfc.yaml
+   "packetlogic::pre_group::ns":    http://172.21.6.152/sandvine/pre_group_ns/nsd.yaml
+   "packetlogic::pre_group::balancer":    http://172.21.6.152/sandvine/pre_group_ns/balancer.yaml
+   "packetlogic::pre::vnf":    http://172.21.6.152/sandvine/pre_vnf/vnfd.yaml
+   "packetlogic::pre::vnfc":    http://172.21.6.152/sandvine/pre_vnf/vnfc.yaml
+   "packetlogic::pre::channel_ports":    http://172.21.6.152/sandvine/pre_vnf/channel_ports.yaml
+   "packetlogic::pre::channel_port":    http://172.21.6.152/sandvine/pre_vnf/channel_port.yaml
+   "packetlogic::pre::vnf_indexed":    http://172.21.6.152/sandvine/pre_vnf/vnfd_indexed.yaml
+   "packetlogic::pre::vnf_contrail":    http://172.21.6.152/sandvine/pre_vnf/vnfd_contrail.yamlpacketlogic::psm::vnf
+   "packetlogic::psm::vnfc":    http://172.21.6.152/sandvine/psm_vnf/vnfc.yaml
+   "packetlogic::standard_networks::ns":    http://172.21.6.152/sandvine/standard_networks_ns/nsd.yaml
+   "packetlogic::standard_networks::ns":    http://172.21.6.152/sandvine/standard_networks_ns/nsd.yaml
